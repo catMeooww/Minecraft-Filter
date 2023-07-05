@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MINECRAFTER FILTER</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"> </script>
+    <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body style="text-align: center; background-color: rgb(183, 255, 162);">
+    <center>
+        <h3 class="btn btn-info">SEJA UM MOB DO MINECRAFT</h3>
+        <hr>
+        <button onclick="takeSnapshot()" class="btn btn-success">Save Morph</button>
+    </center>
+    <div class="col-lg-4 col-md-6 col-sm-12 mobdiv">
+        <p>SELECIONE SEU MOB</p>
+        <button onclick="Select(1)"><img class="selector" src="creeper.png"></button>
+        <button onclick="Select(2)"><img class="selector" src="enderman.png"></button>
+        <button onclick="Select(3)"><img class="selector" src="Picareta.png"></button>
+        <button onclick="Select(4)"><img class="selector" src="Espada.png"></button>
+        <button onclick="Select(5)"><img class="selector" src="Pig.png"></button>
+        <button onclick="Select(6)"><img class="selector" src="steve.png"></button>
+        <button onclick="Select(7)"><img class="selector" src="axolotl.png"></button>
+        <button onclick="Select(8)"><img class="selector" src="skeleton.png"></button>
+        <button onclick="Select(9)"><img class="selector" src="spider.jfif"></button>
+        <button onclick="Select(10)"><img class="selector" src="zombie.jfif"></button>
+        <button onclick="Select(11)"><img class="selector" src="warden.png"></button>
+    </div>
+    <script src="sketch.js"></script>
+</body>
+
+</html>

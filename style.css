@@ -1,0 +1,36 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    position: relative;
+    top: 20px;
+    left:150px;
+  }
+  h3{
+    font-size: 25px !important;
+  }
+  .btn-success:hover{
+    background-color: rgb(3, 153, 70);
+  }
+  .selector{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+    border-style: ridge;
+    border-width: 4px;
+    border-color: green;
+  }
+  .mobdiv button{
+    background-color: rgba(127, 255, 212, 0.11);
+  }
+  canvas{
+    animation-name:example;
+    animation-duration:4s;
+    animation-iteration-count:infinite;
+  }
+  @keyframes example{
+    from{box-shadow:5px 5px 38px rgb(72, 255, 0)}
+    to{box-shadow:5px 5px 38px rgb(2, 70, 30)}
+  }
+  
