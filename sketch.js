@@ -21,6 +21,10 @@ function preload() {
   wardenChest = loadImage("WardenHeart.jpg");
   villager = loadImage("villager.png");
   esmerald = loadImage("esmerald.png");
+  wolf = loadImage("wolf.png");
+  blazebody = loadImage("blaze.png");
+  blaze = loadImage("blazeface.jfif");
+  hotbar = loadImage("survival.png");
 }
 
 function setup() {
@@ -76,6 +80,14 @@ function draw() {
     image(villager, noseX - 50, noseY - 60, 90, 90);
     image(esmerald, noseX - 100, noseY + 150, 70, 70);
     image(esmerald, noseX + 100, noseY + 150, 60, 60);
+  } else if (selected == 13) {
+    image(wolf, noseX - 50, noseY - 60, 100, 90);
+  } else if (selected == 14) {
+    image(steve, noseX - 50, noseY - 60, 90, 90);
+    image(hotbar, noseX - 100, noseY + 90, 200, 170);
+  }else if (selected == 15){
+    image(blazebody, noseX - 50, noseY - 60, 90, 250);
+    image(blaze, noseX - 50, noseY - 60, 90, 90);
   }
 }
 
