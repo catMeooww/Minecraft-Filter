@@ -14,15 +14,16 @@
     <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
-<body style="text-align: center; background-color: rgb(183, 255, 162);">
+<body style="text-align: center; background:url(MinecraftWorld.png);background-size: cover;">
     <center>
-        <h3 class="btn btn-info">SEJA UM MOB DO MINECRAFT</h3>
+        <h3 class="btn btn-info">BE A MINECRAFT MOB</h3>
         <p>BY CAT__MEOW, click in the mob to morph in it</p>
         <hr>
         <button onclick="takeSnapshot()" class="btn btn-success">Save Morph</button>
+        <button onclick="MoreSite()" class="btn btn-danger">More Sites</button>
     </center>
-    <div class="col-lg-4 col-md-6 col-sm-12 mobdiv">
-        <p>SELECIONE SEU MOB</p>
+    <div class="col-lg-4 col-md-4 col-sm-12 mobdiv">
+        <p>SELECT MOB</p>
         <button onclick="Select(1)"><img class="selector" src="creeper.png"></button>
         <button onclick="Select(2)"><img class="selector" src="enderman.png"></button>
         <button onclick="Select(3)"><img class="selector" src="Picareta.png"></button>
@@ -39,6 +40,7 @@
         <button onclick="Select(14)"><img class="selector" src="steve.png"></button>
         <button onclick="Select(15)"><img class="selector" src="blazeface.jfif"></button>
     </div>
+    <div id="canvas" class="col-lg-6 col-md-6 col-sm-12 mobdiv"></div>
     <script src="sketch.js"></script>
 </body>
 

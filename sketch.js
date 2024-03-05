@@ -29,6 +29,7 @@ function preload() {
 
 function setup() {
   canvas = createCanvas(400, 400);
+  canvas.parent("canvas")
   video = createCapture(VIDEO);
   video.size(400, 400);
   video.hide();
@@ -109,4 +110,8 @@ function gotPoses(results) {
 function Select(mob) {
   selected = mob;
   console.log(mob);
+}
+
+function MoreSite(){
+  window.location = "https://catmeooww.github.io/CatMeooww/catmeoowwProjects.html";
 }

@@ -1,6 +1,13 @@
+@font-face {
+  font-family: Minecraft;
+  src: url(Minecraft.ttf);
+}
+
 html, body {
     margin: 0;
     padding: 0;
+    color: aliceblue;
+    font-family: Minecraft;
   }
   canvas {
     position: relative;
