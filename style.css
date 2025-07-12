@@ -8,36 +8,53 @@ html, body {
     padding: 0;
     color: aliceblue;
     font-family: Minecraft;
-  }
-  canvas {
-    position: relative;
-    top: 20px;
-    left:150px;
-  }
-  h3{
+    overflow: hidden;
+}
+canvas{
+  align-self: center;
+  border: green ridge 5px;
+}
+.mobdiv{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.900);
+  border-bottom: 2px outset white;
+}
+.savediv{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.900);
+  border-top: 2px outset white;
+}
+h3{
     font-size: 25px !important;
-  }
-  .btn-success:hover{
-    background-color: rgb(3, 153, 70);
-  }
-  .selector{
+}
+.selector{
     width: 50px;
     height: 50px;
     background-color: gray;
     border-style: ridge;
     border-width: 4px;
     border-color: green;
-  }
-  .mobdiv button{
+}
+button{
     background-color: rgba(127, 255, 212, 0.11);
-  }
-  canvas{
-    animation-name:example;
-    animation-duration:4s;
-    animation-iteration-count:infinite;
-  }
-  @keyframes example{
-    from{box-shadow:5px 5px 38px rgb(72, 255, 0)}
-    to{box-shadow:5px 5px 38px rgb(2, 70, 30)}
-  }
+    color:aliceblue;
+    font-size: 14px;
+    font-family: Minecraft;
+    padding: 5px;
+}
+button:hover{
+    cursor: pointer;
+    border-color: green;
+}
+#collapser{
+  color: aliceblue;
+  background-color: rgba(0, 0, 0, 0);
+  float: right;
+}
   

@@ -3,11 +3,9 @@
 
 <head>
     <title>MINECRAFTER FILTER</title>
-    <link rel="icon" type="image/png" href="creeper.png"/>
+    <link rel="icon" type="image/png" href="creeper.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"> </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"> </script>
     <script src="//unpkg.com/ml5@0.4.3/dist/ml5.min.js" target="_blank"></script>
     <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"> </script>
@@ -16,31 +14,41 @@
 
 <body style="text-align: center; background:url(MinecraftWorld.png);background-size: cover;">
     <center>
-        <h3 class="btn btn-info">BE A MINECRAFT MOB</h3>
-        <p>BY CAT__MEOW, click in the mob to morph in it</p>
-        <hr>
-        <button onclick="takeSnapshot()" class="btn btn-success">Save Morph</button>
-        <button onclick="MoreSite()" class="btn btn-danger">More Sites</button>
+        <div class="mobdiv">
+            <div id="options" style="padding: 0;">
+                <h3 style="margin: 1;">BE A MINECRAFT MOB</h3>
+                <p style="margin: 0;">Click in the Mob to morph in it</p>
+                <div style="text-align: left;margin: -1;">
+                    <button>MOBS</button><button>BackGround</button>
+                </div>
+                <hr>
+                <p style="margin: 1;">SELECT MOB</p>
+                <button onclick="Select(1)"><img class="selector" src="creeper.png"></button>
+                <button onclick="Select(2)"><img class="selector" src="enderman.png"></button>
+                <button onclick="Select(3)"><img class="selector" src="Picareta.png"></button>
+                <button onclick="Select(4)"><img class="selector" src="Espada.png"></button>
+                <button onclick="Select(5)"><img class="selector" src="Pig.png"></button>
+                <button onclick="Select(6)"><img class="selector" src="steve.png"></button>
+                <button onclick="Select(7)"><img class="selector" src="axolotl.png"></button>
+                <button onclick="Select(8)"><img class="selector" src="skeleton.png"></button>
+                <button onclick="Select(9)"><img class="selector" src="spider.jfif"></button>
+                <button onclick="Select(10)"><img class="selector" src="zombie.jfif"></button>
+                <button onclick="Select(11)"><img class="selector" src="warden.png"></button>
+                <button onclick="Select(12)"><img class="selector" src="villager.png"></button>
+                <button onclick="Select(13)"><img class="selector" src="wolf.png"></button>
+                <button onclick="Select(14)"><img class="selector" src="steve.png"></button>
+                <button onclick="Select(15)"><img class="selector" src="blazeface.jfif"></button>
+            </div>
+            <button id="collapser" onclick="toggleMenu()" style="margin: 0;">^</button>
+        </div>
+        <div id="canvas" style="justify-content: center;align-items: center;height: 100%;width: 100%;"></div>
+        <div class="savediv">
+            <label style="float: left;color: grey;">BY CatMeooww10</label>
+            <button onclick="takeSnapshot()">Save Morph</button>
+            <button onclick="MoreSite()">More Sites</button>
+            <label style="float: right;color: grey;">AI might have bugs!</label>
+        </div>
     </center>
-    <div class="col-lg-4 col-md-4 col-sm-12 mobdiv">
-        <p>SELECT MOB</p>
-        <button onclick="Select(1)"><img class="selector" src="creeper.png"></button>
-        <button onclick="Select(2)"><img class="selector" src="enderman.png"></button>
-        <button onclick="Select(3)"><img class="selector" src="Picareta.png"></button>
-        <button onclick="Select(4)"><img class="selector" src="Espada.png"></button>
-        <button onclick="Select(5)"><img class="selector" src="Pig.png"></button>
-        <button onclick="Select(6)"><img class="selector" src="steve.png"></button>
-        <button onclick="Select(7)"><img class="selector" src="axolotl.png"></button>
-        <button onclick="Select(8)"><img class="selector" src="skeleton.png"></button>
-        <button onclick="Select(9)"><img class="selector" src="spider.jfif"></button>
-        <button onclick="Select(10)"><img class="selector" src="zombie.jfif"></button>
-        <button onclick="Select(11)"><img class="selector" src="warden.png"></button>
-        <button onclick="Select(12)"><img class="selector" src="villager.png"></button>
-        <button onclick="Select(13)"><img class="selector" src="wolf.png"></button>
-        <button onclick="Select(14)"><img class="selector" src="steve.png"></button>
-        <button onclick="Select(15)"><img class="selector" src="blazeface.jfif"></button>
-    </div>
-    <div id="canvas" class="col-lg-6 col-md-6 col-sm-12 mobdiv"></div>
     <script src="sketch.js"></script>
 </body>
 
